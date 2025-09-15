@@ -12,9 +12,9 @@ model = pickle.load(open("model_1.pkl", "rb"))
 
 
 
-# Download required nltk resources
 nltk.download("stopwords")
 nltk.download("punkt")
+nltk.download("punkt_tab")  
 nltk.download("wordnet")
 
 stop_words = set(stopwords.words("english"))
