@@ -1,114 +1,97 @@
 # project link - https://drive.google.com/drive/folders/1Sek8DmPxtx4yEeIXE1cqRBV2YpCTQxWa?usp=sharing
 
-# Context
-The SMS Spam Collection is a set of SMS tagged messages that have been collected for SMS Spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam.
+SMS Spam Detection Project - Technical PowerPoint Content
+Slide 1: Project Title
 
-# Content
-The files contain one message per line. Each line is composed by two columns: v1 contains the label (ham or spam) and v2 contains the raw text.
+Title: SMS Spam Detection using Machine Learning
+Name: Aditya Verma
+Date: April 2025
 
-This corpus has been collected from free or free for research sources at the Internet:
+Slide 2: Objective
 
+Detect whether a given SMS is spam or not using ML techniques
 
+Improve accuracy and reduce false spam predictions
 
-# SMS Spam Detection Project - Technical PowerPoint Content 📊
+Slide 3: Dataset Overview
 
-# Slide 1: Project Title 🎯
+Source: UCI SMS Spam Collection Dataset
 
-Title: SMS Spam Detection using Machine Learning 🤖
+Total messages: 5572
 
-Name: Aditya Verma 👨‍💻
+Spam: 747
 
-Date: April 2025 📅
+Ham: 4825
 
-# Slide 2: Objective 🎯
+Format: Two columns - Label and Message
 
-Detect whether a given SMS is spam or not using ML techniques 🔍📨
+Slide 4: Data Preprocessing
 
-Improve accuracy and reduce false spam predictions 📈❌
+Converted text to lowercase
 
-# Slide 3: Dataset Overview 📂
+Removed punctuation and special characters
 
-Source: UCI SMS Spam Collection Dataset 🌐
+Tokenized the text
 
-Total messages: 5572 ✉️
+Removed stopwords
 
-Spam: 747 🚫
+Applied stemming using PorterStemmer
 
-Ham: 4825 ✅
+Slide 5: Feature Extraction
 
-Format: Two columns - Label and Message 🧾
+Used TF-IDF Vectorizer
 
-# Slide 4: Data Preprocessing 🛠️
+ngram_range = (1, 2) → Unigrams & Bigrams
 
-Converted text to lowercase 🔤
+max_features = 5000
 
-Removed punctuation and special characters ❗
+Transformed clean text into numerical vectors
 
-Tokenized the text ✂️
-
-Removed stopwords ❌📃
-
-Applied stemming using PorterStemmer 🌱
-
-# Slide 5: Feature Extraction 🔎
-
-Used TF-IDF Vectorizer 📏
-
-ngram_range = (1, 2) ➡️ Unigrams & Bigrams 📚
-
-max_features = 5000 🔢
-
-Transformed clean text into numerical vectors 🔣
-
-# Slide 6: Model Selection 🤖
+Slide 6: Model Selection
 
 Models Tried:
 
-Multinomial Naive Bayes 🧠
+Multinomial Naive Bayes
 
-Logistic Regression 📊
+Logistic Regression
 
-Support Vector Machine (SVM) ⚙️
+Support Vector Machine (SVM)
 
-Evaluation: Accuracy, Precision, Recall, F1-Score 📈
+Evaluation Metrics: Accuracy, Precision, Recall, F1-Score
 
-# Slide 7: Model Evaluation 🧪
+Slide 7: Model Evaluation
 
-Best Model: Multinomial Naive Bayes 🥇
+Best Model: Multinomial Naive Bayes
 
-Train/Test Split: 80/20 📘📕
+Train/Test Split: 80/20
 
-Accuracy: 99.7% ✅
+Accuracy: 99.7%
 
-Precision: 99% 🎯
+Precision: 99%
 
-# Slide 8: Confusion Matrix 🔢
+Slide 8: Confusion Matrix
 
-True Positives (Spam correctly detected): High 🔍✅
+True Positives (Spam correctly detected): High
 
-True Negatives (Ham correctly detected): High 📩✅
+True Negatives (Ham correctly detected): High
 
-False Positives (Ham as Spam): Low 🚫📩
+False Positives (Ham as Spam): Low
 
-False Negatives (Spam as Ham): Low ⚠️📤
+False Negatives (Spam as Ham): Low
 
-# Slide 9: Libraries Used 🧰
+Slide 9: Libraries Used
 
-pandas, numpy: Data handling 📊
+pandas, numpy: Data handling
 
-sklearn: Modeling & metrics 🧠
+sklearn: Modeling & metrics
 
-nltk: NLP preprocessing 🧹
+nltk: NLP preprocessing
 
-matplotlib, seaborn: Visualization 📈
+matplotlib, seaborn: Visualization
 
-# Slide 10: Conclusion ✅
+Slide 10: Conclusion
 
-Built spam detection model using NLP & ML 🧠📱
+Built spam detection model using NLP & ML
 
-High performance with Naive Bayes and RandomForestClassification + TF-IDF 🌟
-
-
-
-
+High performance with Naive Bayes and RandomForestClassifier + TF-IDF
 
